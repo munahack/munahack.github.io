@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Muña</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="icono.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--<link rel="stylesheet" type="text/css" href="css/blog.css">-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+</head>
+
+<body>
+	<div class="navbar-wrapper" style="margin-top: 0px;">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation" style="border-radius:0px">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html" style="color:#00ff00"><span class="glyphicon glyphicon-grain"></span> Mu&ntilde;a</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Principal</a></li>
+                <li class="active"><a href="download.html">Instalación</a></li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<div class="container" style="margin-bottom:0px; overflow:hidden;">
+			<div class="row">
+				<div class="col-sm-2 fondoBlanco"></div>
+				<div class="col-sm-5 fondoBlanco">
+					<div class="alert alert-danger text-justify" role="alert">
+						<strong>Antes de instalar Muña!</strong> Necesitas tener instalado Apache, Php, MySQL y phpMyAdmin. Si estas bajo Windows puede usar <a href="https://www.apachefriends.org/es/index.html" target="_black">Xampp</a> y si estas bajo Linux puedes seguir esta <a href="https://www.regoremor.com/plataformas/linux/instalacion-de-apache2-con-php5-y-mysql-en-debian-squeeze/" target="_black">guía de instalación</a>. Luego de esto empezamos con la instalación.
+					</div>
+					<table class="table table-striped">						  
+						<thead>
+						  <tr>
+							<th>Pasos para la instalación de Muña v0.9</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>1.	Descargue la aplicación web (Download ZIP -> GitHub)</td>
+						  </tr>
+						  <tr>
+							<td>2.	Descomprime el archivo en la carpeta /htdocs si utilizas xampp o /www si utilizas otro o si estas bajo linux</td>
+						  </tr>
+						  <tr>
+							<td>3. Ahora puedes probar desde tu navegador http://localhost/muna/</td>
+						  </tr>
+						  <tr>
+							<td>4. Debes restaurar la base de datos,  el script se encuentra en la carpeta /muna/database/malditawebd.sql</td>
+						  </tr>
+						  <tr>
+							<td>5. Restaura la base de datos en tu servidor MySql, puedes usar PhpMyAdmin para éste trabajo (http://localhost/phpmyadmin)</td>
+						  </tr>
+						  <tr>
+							<td>6. Actualiza el archivo /muna/conexion.inc colocando la cuenta y password de tu servidor MySql
+								<code>
+										 	<br/>$servidor = "localhost"; 
+											<br/>$cuenta = "tuCuenta";
+											<br/>$password = "tuPassword";
+											<br/>$database = "malditawebd";
+								</code>
+							</td>
+						  </tr>
+						  <tr>
+							<td>7. <strong>En hora buena!! </strong>En tu navegador entra a http://localhost/muna/ y ya puedes usar Muña y practicar a <i>Hackear <b>=)</b></i> </td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-sm-3 fondoBlanco text-center">
+					<div>
+					  <center><img src="images/saul.png" class="img-responsive" alt="Saul Mamani"></center>
+					  <h4>@kanito777</h4>
+					  <p class="text-muted">Ing. Saúl Mamani<br/>
+					  mail: luas0_1@yahoo.es<br/>
+					  Cel: +591 76137269<br/>
+					  <a href='https://www.linkedin.com/in/saullmamani' target='_blak'> linkedin </a><br/>
+					  </p>
+
+					  <div class="text-center"><a class="btn btn-lg btn-primary" href="https://github.com/kanito7777777/muna.git" target="_new" role="button"><span class="glyphicon glyphicon-cloud-download"></span> Descargar App Web</a></div>				  
+					  <p><a href='http://www.slideshare.net/luas0_1/in-seguridad-de-aplicaciones-web' target='_new'> { presentación }</a></p>
+
+					  <hr/>
+					  <video autobuffer autoloop loop controls>
+					  	<source src="/media/video.oga">
+					  	<source src="/media/video.m4v">
+					  	<object type="video/ogg" data="/media/video.oga" width="320" height="240">
+					  	<param name="src" value="/media/video.oga">
+					  	<param name="autoplay" value="false">
+					  	<param name="autoStart" value="0">
+					  	<p><a href="/media/video.oga">Descargue este video.</a></p>
+					  	</object>
+					  </video>
+					  <hr/>
+					  <p class="text-center text-muted">Si quieres apoyar este proyecto o si encuentras nuevas formas de vulnerar esta app web, no dudes en <a href="mailto:luas0_1@yahoo.es">escribirnos</a>.</p>
+					</div>
+				</div>
+			</div>
+    </div>
+    
+    <div class="panel-footer" style="overflow:hidden">
+          <span class="text-muted"><a href="http://www.somosdas.com" target="_black" style="color:#777; text-decoration:none" >&copy; somosDAS</a></span>
+    </div>
+    
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
